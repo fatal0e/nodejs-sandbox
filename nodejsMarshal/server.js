@@ -12,7 +12,7 @@ var payload = {
 	anObject: { a: 'foo', b: 12 }
 };
 
-dotNetFunction(12, function (error, result) {
+dotNetFunction(payload, function (error, result) {
 	if (error) throw error;
 	console.log(result);
 })

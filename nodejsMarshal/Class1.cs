@@ -8,9 +8,9 @@ namespace nodejsMarshal
 {
     public class Startup
     {
-        public async Task<object> Invoke(object input)
+        public async Task<object> Invoke(dynamic input)
         {
-            int v = (int)input;
+            int v = (int)input.anInteger;
             return AddSeven(v);
         }
 
