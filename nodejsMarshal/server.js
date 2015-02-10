@@ -2,8 +2,10 @@
 
 var dotNetFunction = edge.func('nodejsMarshal.dll');
 
+var foo = 7;
+
 var payload = {
-	anInteger: 1,
+	anInteger: foo,
 	aNumber: 3.1415,
 	aString: 'foo',
 	aBoolean: true,
