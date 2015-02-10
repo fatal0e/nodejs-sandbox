@@ -1,6 +1,6 @@
 ﻿var edge = require('edge');
 
-var dotNetFunction = edge.func('nodejsMarshal.dll');
+var dotNetFunction = edge.func({ assemblyFile: 'nodejsMarshal.dll' });
 
 var foo = 7;
 
